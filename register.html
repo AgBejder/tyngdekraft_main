@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -37,17 +37,82 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Indtast her</h2>
+          <p>
+            Venligst indtast hvor du har haft oplevelser med at miste dine ting.
+            Det er vigtigt at vi kan finde ud af hvor der er størst chance for
+            at den omvendte tyngdekraft rammer, for at vi kan forhindre og finde
+            ud af hvad der nemmest flyver væk
+          </p>
         </article>
-        <form id="webform"></form>
       </section>
       <section id="form-summary">
-        <h2>Summary</h2>
+        <h2>Opsamling</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <p class="placeholder">
+            Her er hvad du har skrevet ind, venligst tjek efter om det er de
+            rigtige oplysninger
+          </p>
         </article>
       </section>
+      <form>
+        <div class="form-group">
+          <label for="first_name">Fornavn</label>
+          <input type="text" id="first_name" name="first_name" required />
+          <p class="error-message">Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <label for="last_name">Efternavn</label>
+          <input type="text" id="last_name" name="last_name" required />
+          <p class="error-message">Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <p class="error-message">Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <label for="id-delivery">Hvor har du mistet dine ting?</label>
+          <select id="id-delivery" name="id-delivery">
+            <option>Garderoben</option>
+            <option>Modeshow</option>
+            <option>Butikken</option>
+          </select>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="a">Hvad har du mistet?</label>
+            <textarea name="besked" id="a"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="terms">
+              <input
+                type="checkbox"
+                id="terms"
+                name="accept_terms"
+                value="yes"
+                required
+              />
+              Accepter betingelser
+            </label>
+          </div>
+
+          <button>Send</button>
+        </form>
+        <section class="output">
+          <div>
+            <p>Fornavn: <span id="first_name_output"></span></p>
+            <p>Efternavn: <span id="last_name_output"></span></p>
+            <p>Email: <span id="email_output"></span></p>
+            <p>Vælg: <span id="vaelg_output"></span></p>
+            <p>Besked:<span id="besked_output"></span></p>
+            <p>Betingelser accepteret: <span id="terms_output"></span></p>
+          </div>
+        </section>
+      </form>
     </main>
     <footer>
       <nav class="some">
@@ -77,5 +142,6 @@
     </footer>
     <script src="js/burger.js"></script>
     <!-- <script src="js/main.js"></script> -->
+    <script src="js/register.js"></script>
   </body>
 </html>
