@@ -76,3 +76,101 @@ select,
   white-space: nowrap;
   clip-path: inset(100%);
 }
+/* Generelle styles */
+input {
+  border: 1px solid #000;
+  padding: 0.25rlh;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px #0001;
+  background-color: #fff;
+}
+
+button {
+  border: 1px solid deeppink;
+  background-color: deeppink;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.25rlh 0.5rlh;
+  cursor: pointer;
+}
+
+.error-message {
+  color: darkred;
+}
+
+/* Form layout */
+form {
+  display: grid;
+  gap: 1rlh;
+  padding: 1rlh;
+  accent-color: deeppink;
+  background-color: #fff;
+  border-radius: 10px;
+
+  .form-group {
+    display: grid;
+    gap: 0.1rlh;
+  }
+
+  label:has(input) {
+    display: flex;
+    align-items: center;
+    gap: 0.25rlh;
+    justify-self: start;
+  }
+}
+
+/* Pseudo-classes */
+:focus-visible {
+  /* virker til både knapper og input-felter, select, textarea, links mm. */
+  outline: 1px solid deeppink;
+  outline-offset: 1px;
+}
+.error-message {
+  display: none;
+}
+/* Hover-styles */
+button:hover {
+  background: rgb(255, 97, 181);
+}
+/* Active-styles (imens man klikker) */
+button:active {
+  scale: 0.98;
+}
+
+/* Valideringsregler */
+/* Tilføj stjerne til labels */
+.form-group:has(:required) {
+  label::after {
+    content: " *";
+    color: red;
+  }
+}
+/* Tilføj rød kant omkring input-feltet, hvis det er ugyldigt */
+.form-group:has(:user-invalid) {
+  input {
+    outline: 3px solid #f005;
+    border-color: darkred;
+  }
+  /* Vis fejlmeddelelsen, hvis feltet er ugyldigt */
+  .error-message {
+    display: block;
+  }
+}
+textarea {
+  background-color: #fff;
+  border-color: #000;
+  border-radius: 6px;
+}
+
+#id-delivery {
+  background-color: #fff;
+}
+
+.output div {
+  background: #f5f5f5;
+  padding: 1rlh;
+  border-radius: 6px;
+  display: grid;
+  gap: 0.5rlh;
+}

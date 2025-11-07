@@ -53,7 +53,7 @@
   --font-weight-bold: 700;
 
   /* Text sizes */
-  --logotype-size: 1rem;
+  --logotype-size: 2rem;
   --headline1-size: 2rem;
   --headline2-size: 1rem;
   --headline3-size: 1rem;
@@ -63,7 +63,7 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #676161;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: #fff;
+  --color-infobox-1-bg: #fceb94;
+  --color-infobox-2-bg: #def5db;
 }
