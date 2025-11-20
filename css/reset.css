@@ -32,6 +32,11 @@ svg {
   width: 100%;
   height: auto;
 }
+.img_logo {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+}
 
 label {
   display: block;
@@ -104,7 +109,7 @@ form {
   gap: 1rlh;
   padding: 1rlh;
   accent-color: deeppink;
-  background-color: #fff;
+  background-color: light-dark(#fff, #4e576a);
   border-radius: 10px;
 
   .form-group {
@@ -168,7 +173,7 @@ textarea {
 }
 
 .output div {
-  background: #f5f5f5;
+  background: light-dark(#f5f5f5, #4e576a);
   padding: 1rlh;
   border-radius: 6px;
   display: grid;

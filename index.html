@@ -18,7 +18,8 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> Fash Fly</a>
+          <img class="img_logo" src="img/logo_fash.svg" alt="logo" srcset="" />
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -29,28 +30,28 @@
           <span class="line"></span>
           <span class="line"></span>
         </button>
+        <button id="toggle">Dark/light mode</button>
       </nav>
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>EMERCENCY!!!</h1>
+          <p class="sub">Tyngdekraften forsvinder i modeverdenen</p>
         </div>
       </div>
     </section>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/omvendt_tyngdekraft_full.svg" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Hvad du kan gøre</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Ting forsvinder til højre og venstre, eller nærmere flyver væk. Se
+              hvad du kan gøre hvis du mister dine ting
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="instruction.html" class="cta_btn">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
@@ -67,22 +68,141 @@
       </section>
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>NYHED</h3>
+          <p>Køb dine tyngdekraftsko mens de stadig er på lager</p>
+          <img src="img/tyngdekraftsko.svg" alt="tyngdekraftsko" />
+
+          <button popovertarget="tyngdekraft_popover" class="cta_btn">
+            Læs mere
+          </button>
+          <div id="tyngdekraft_popover" popover>
+            <h2>
+              Tyngdekraft Sko - De ser ud som om de faldt ned fra rummet… og
+              måske gjorde de det.
+            </h2>
+            <p>
+              Er de smukke? Nej. Er de komfortable? Ja. Er du klar til at
+              forsvare dem, når folk spørger hvad der skete på dine fødder?
+              100%. Tyngdekraft Sko er så mærkelige, at selv modefolk bliver
+              nysgerrige. De er som chunky sneakers, der er gået på kunstskole
+              og droppet ud for at “finde sig selv”.
+            </p>
+            <ul>
+              <li>Føles som at gå på små skyer</li>
+              <li>Giver dine fødder en krammer</li>
+              <li>
+                Perfekt til dig, der er træt af pæne sko og pæne meninger Når
+                folk siger “de sko er grimme”, svarer du bare: “Det er ikke
+                grimt, det er avantgarde.”
+                <p>
+                  Tyngdekraft Sko. Det mest komfortable modeoprør du nogensinde
+                  har haft på
+                </p>
+              </li>
+            </ul>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>SHOPPING GUIDE</h3>
+          <p>Hvor du IKKE skal færdes, når tøjet ikke gider blive på jorden</p>
+          <img src="img/shopping_not_to.svg" alt="shopping_not_to" />
+          <button popovertarget="shopping_popover" class="cta_btn" href="">
+            Læs mere
+          </button>
+          <div id="shopping_popover" popover>
+            <h2>
+              Shopping Guide: Hvor du IKKE skal færdes, når tøjet ikke gider
+              blive på jorden
+            </h2>
+            <ol>
+              <li>
+                Storcentre med aircondition Når tøjet allerede svæver, behøver
+                det ikke vind. Resultat: kjoler i loftet, trøjer i
+                ventilationssystemet og flyvende sokker, der angriber
+                intetanende kunder. Hold dig væk.
+              </li>
+              <li>
+                Butikker med højt til loftet Normalt en luksus. Nu: en
+                tøjversion af ballonfestivalen i Alperne. Hvis du ikke vil ligne
+                en person, der prøver at fange en svævende hættetrøje med en
+                kost, så gå udenom.
+              </li>
+              <li>
+                Vintagebutikker Tøjet er allerede fuld af karakter, og uden
+                tyngdekraft får det også attitude. Man har rapporteret kjoler,
+                der nægter at komme ned, fordi de “fortjener en køber med mere
+                stilforståelse”.
+              </li>
+              <li>
+                Åbne torve og gader Frisk luft + ingen tyngdekraft = gratis
+                tøjregn. Lyder godt? Nej. Alt tøj der slipper løs, har det med
+                at svæve direkte i hovedet på den nærmeste hundeejer eller
+                cyklist. Katastrofe i slowmotion.
+              </li>
+              <li>
+                Outlet-butikker Normalt: kaos. Nu: kaos i 3D. Tøjet svæver,
+                kunder hopper efter jeans, og en jakke blev sidst set hænge i en
+                lygtepæl.
+              </li>
+              <li>
+                Omklædningsrum Hvis bukserne svæver væk inden du får dem på, er
+                det bare ikke din dag. Og ingen fortjener at jage en flyvende
+                nederdel i undertøj.
+              </li>
+            </ol>
+            <p>
+              ✅ De sikre steder (hvis man absolut skal shoppe): Butikker i
+              kælderniveau Lokaler med lavt til loftet Rum med meget tunge
+              mannequiner Og selvfølgelig: I nærheden af folk med Tyngdekraft
+              Sko. Det er det eneste, der holder modeverdenen nede -
+              bogstaveligt talt.
+            </p>
+          </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>NYHED!!</h3>
+          <p>Spekulationer om professer Polyester</p>
+          <img src="img/professer.svg" alt="ond_professer" />
+          <button popovertarget="professer_popover" class="cta_btn">
+            Læs mere
+          </button>
+          <div id="professer_popover" popover>
+            📰 MODE-ALARM: Tyngdekraften er forsvundet – men kun i modeverdenen
+            “Tøj flyver, modeller svæver, og ingen kan forklare noget som
+            helst.” KØBENHAVN – Modebranchen vågnede torsdag morgen til et chok:
+            tyngdekraften er tilsyneladende forsvundet… men kun fra tøj. Bukser
+            svæver over tøjstativer, tasker nægter at blive på hylderne, og en
+            kjole fra Paris Fashion Week fløj ud af vinduet og blev sidst set
+            over Amager Strandpark. Forskere står komplet uden svar – eller,
+            næsten alle. Ifølge rygter er der én person, der måske ved mere end
+            han siger: En anonym videnskabsmand, tidligere materialeforsker, nu
+            kendt i undergrunden som “Professor Polyester”. Han menes at være
+            træt af overforbrug, billige trends og klimaaftryk, og derfor har
+            han taget det ultimative skridt: “Hvis folk ikke kan lade være med
+            at købe nyt tøj, så må jeg gøre det fysisk umuligt at gå med det,”
+            skulle han angiveligt have skrevet i en kryptisk mail efterladt på
+            en særligt grim catwalk-støvle. MODEHUSET I PANIK I modehusene
+            forsøger designere febrilsk at sikre kollektionerne med tape,
+            magneter og hvad man kun kan beskrive som meget fashionable mursten.
+            Influencere rapporterer kaos: “Mine bukser svævede ud af døren under
+            en story. Har nogen set dem?” “Min totebag fløj direkte ind i en
+            cyklist. Det var meget couture, men han var ikke begejstret.” EN
+            MYSTISK LØSNING Midt i det hele dukker en uventet helt op:
+            Tyngdekraft Sko. De er tunge. De er massive. De holder fødderne
+            solidt plantet på jorden – og angiveligt alt resten af outfittet
+            med. Flere modehuse hævder, at når modeller går med Tyngdekraft Sko,
+            stopper tøjet med at svæve. En talsmand fra branchen udtaler: “Vi
+            ved ikke hvorfor. Vi ved bare, at når de sko er på, falder kjolerne
+            ned igen. Ærligt, de er ikke kønne… men de virker.” PROFESSOR
+            POLYESTER UDTALELSE En ny hemmelig besked er dukket op på en
+            svævende denimjakke: “Jeg hader ikke tøj. Jeg hader spild. Mode må
+            gerne være kreativ - bare ikke klimakatastrofal. Brug ting længere.
+            Lad stil veje mere end forbrug.” KONKLUSION Ingen ved endnu, om
+            tyngdekraften vender tilbage. Indtil videre ser det ud til, at
+            modebranchen må overleve på tape, panik – og Tyngdekraft Sko, som
+            tilsyneladende er de eneste, der kan holde begge fødder (og kjoler)
+            nede på jorden. Vi følger sagen. Vogt jer for flyvende frakker.
+          </div>
         </article>
       </section>
     </main>
@@ -114,6 +234,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/darkmode.js"></script>
+    <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

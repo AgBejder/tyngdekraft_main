@@ -91,3 +91,70 @@
   content: "\2192";
   margin-left: 1rem;
 }
+
+[popover] {
+  /* /* opacity: 0; */
+  transition: 1s allow-discrete;
+
+  padding: 1rem;
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+  margin: auto;
+
+  button {
+    position: sticky;
+    top: 0;
+    justify-self: end;
+    align-self: center;
+  }
+
+  &:popover-open {
+    opacity: 1;
+    display: grid;
+  }
+
+  &::backdrop {
+    background: #0008;
+    transition: 0.5s allow-discrete;
+  }
+}
+
+/* Popover */
+[popover] {
+  opacity: 0;
+  /* rotate: 360deg; */
+  transition: all 1s ease allow-discrete;
+}
+
+[popover]:popover-open {
+  opacity: 1;
+  /* rotate: none; */
+  translate: none;
+  transition-duration: 130ms;
+  transition-timing-function: linear;
+}
+
+@starting-style {
+  [popover]:popover-open {
+    /* rotate: -360deg; */
+    opacity: 0;
+  }
+}
+
+/* Backdrop */
+::backdrop {
+  opacity: 0;
+  transition: 1s allow-discrete;
+  background: #0008;
+}
+
+:popover-open::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  :popover-open::backdrop {
+    opacity: 0;
+  }
+}

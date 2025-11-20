@@ -1,21 +1,21 @@
 :root {
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg: light-dark(#fceb94, #0a0e15); /* page background /*
 
   /* Header */
-  --color-head-bg: #ff4b00;
+  --color-head-bg: light-dark(#ff4b00, #4e576a);
 
   /* Logotype */
-  --color-logotype-bg: #000;
-  --color-text-logotype: #fffae2;
+  --color-logotype-bg: light-dark(#6f90eb, #4e576a);
+  --color-text-logotype: light-dark(#fffae2, deeppink);
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #6f90eb;
+  --color-menu-bg: light-dark(#6f90eb, #121212);
   /* Links */
-  --color-link-bg: #fffae2;
-  --color-link-hover: #fff; /* used */
-  --color-link-active: #fffae2; /* used */
+  --color-link-bg: light-dark(#fffae2, deeppink);
+  --color-link-hover: light-dark(#fff, pink); /* used */
+  --color-link-active: light-dark(#fffae2, deeppink); /* used */
   --border-radius-links: 37px;
 
   /* Headlines og rubrik */
@@ -23,12 +23,12 @@
   --font-sub1-size: 48px;
   --font-h2-size: 36px;
   --font-h3-size: 32px;
-  --color-headline-bg: #000;
-  --color-headline-text-page: #fffae2;
+  --color-headline-bg: light-dark(#000, #000);
+  --color-headline-text-page: light-dark(#fffae2, #fff);
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #fffae2;
+  --color-text: light-dark(#000, #fff);
+  --color-text-inverted: light-dark(#fffae2, #fff);
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,13 +37,13 @@
   --border-radius: 27px;
 
   /* Cards */
-  --color-card-bg: #fff;
-  --color-cta-card-bg: #ff4b00;
+  --color-card-bg: light-dark(#fff, #bfc6d4);
+  --color-cta-card-bg: light-dark(#ff4b00, deeppink);
   /* news-cards */
-  --color-news-bg: #fffae2;
+  --color-news-bg: light-dark(#fffae2, #bfc6d4);
   --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #ffa680;
-  --color-cta-newscard-bg-inverted: #6f90eb;
+  --color-cta-newscard-bg: light-dark(#ffa680, rgb(252, 82, 172));
+  --color-cta-newscard-bg-inverted: light-dark(#6f90eb, #4e576a);
 
   /* Fonts */
   --font-family-sans: "rubik", ui-sans-serif;
@@ -64,6 +64,27 @@
 
   /* Infographics */
   --color-info-bg: #fff;
-  --color-infobox-1-bg: #fceb94;
-  --color-infobox-2-bg: #def5db;
+  --color-infobox-1-bg: light-dark(#fceb94, #4e576a);
+  --color-infobox-2-bg: light-dark(#def5db, #d1d6e0);
+}
+/* CSS Starter er tilføjet */
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+button {
+  border: none;
+  background: Canvas;
+  color: CanvasText;
+  border: 1px solid currentColor;
+  text-box: cap alphabetic;
+  padding: 1cap;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+  margin-block: 1.5rlh;
 }
